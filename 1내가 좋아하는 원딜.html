@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+  a {
+    color:black;
+    text-decoration: none;
+  }
+    h1{
+         font-size:2rem;
+         font-family: arial, verdana, "Helvetica Neue", serif;
+         font-weight: bold;
+         text-align: center;
+         border-bottom:1px solid gray;
+         margin:0;
+    }
+     body {
+          font-size:1rem;
+          font-family: arial, verdana, "Helvetica Neue", serif;
+          line-height: 2;
+        }
+   #main {
+         border-bottom: 1px solid gray;
+          border-right: 1px solid gray;
+  }
+   #main2{
+      margin:0;
+      border-right: 1px solid gray;
+   }
+   ol{margin-top:0;}
+        #grid {
+            display:grid;
+            grid-template-columns: 150px 1fr;
+           grid-template-rows: 1fr 1fr;
+          }
+  .container {
+ grid-template-areas:
+   "AD ADWHAT "
+   "GOODAD ADLIST  ";
+}
+ #article{
+   padding-left: 18px;
+   border-bottom: 1px solid gray
+ }
+ @media(max-width:550px)
+ {
+   #grid {
+       display:block;
+     }
+     #article{
+         border-left:none;
+         border-bottom:none;
+       }
+   h1 {
+       border-bottom:none;
+       }
+       #main {
+             border-bottom:none;
+              border-right:none;
+      }
+      #main2{
+         border-right:none;
+      }
+   }
+  </style>
+ </head>
+ <body>
+   <h1>내가 좋아하는 포지션은 원딜이다</h1>
+  <div id="grid">
+   <div id="main">
+   <ul>
+     <li><a href="2원딜이란.html" target="_blank" title="숟가락">원딜이란?</a></li>
+   </ul>
+   </div>
+   <div id="article">
+    원딜은 서폿의 보호를 받으며, 탱커를 앞에 세우고 상대 앞라인부터 서서히 녹이는 포지션이다.
+    상대적으로 몸이 약하고 뚜벅이가 많아서 포지셔닝과 피지컬이 좋아야한다, 반응속도가 빠른 선수들이 많고 사거리 조절에 능한 선수들이 많다.
+    대표적인 선수는 SKT 뱅 DRX 데프트 GENG 룰러 T1 구마유시 RNG 갈라 TES 재키러브 등이 있다.
+  </div>
+   <div id="main2">
+    <ul>
+     <li>내가 좋아하는 원딜 리스트</li>
+   </ul>
+  </div>
+   <ol type="A">
+     <li><a href="3카이사.html" target="_blank" title="LPL원딜의 상징">카이사</a></li>
+     <li><a href="4아펠리오스.html" target="_blank" title="200years">아펠리오스</a></li>
+     <li><a href="5미스포춘.html" target="_blank" title="가짜원딜">미스포츈</a></li>
+   </ol>
+ </div>
+ </body>
+</html>

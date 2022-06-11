@@ -1,0 +1,37 @@
+a {
+  color:black;
+  text-decoration: none;
+}
+  h1{
+       font-size:2rem;
+       font-family: arial, verdana, "Helvetica Neue", serif;
+       font-weight: bold;
+       text-align: center;
+       border-bottom:1px solid gray;
+       margin-bottom:0;
+  }
+   body {
+        font-size:1rem;
+        font-family: arial, verdana, "Helvetica Neue", serif;
+        line-height: 2;
+      }
+      #grid {
+          display:grid;
+          grid-template-columns: 150px 1fr;
+        }
+      #article{
+        border-left:1px solid gray;
+        padding-left:25px;
+      }
+      @media(max-width:550px)
+      {
+        #grid {
+            display:block;
+          }
+          #article{
+              border-left:none;
+            }
+        h1 {
+            border-bottom:none;
+            }
+        }
